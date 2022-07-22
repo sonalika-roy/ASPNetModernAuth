@@ -1,0 +1,43 @@
+﻿<!--
+//===============================================================================
+// Microsoft FastTrack for Azure
+// ASP.Net Modern Authentication Samples
+//===============================================================================
+// Copyright © Microsoft Corporation.  All rights reserved.
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// FITNESS FOR A PARTICULAR PURPOSE.
+//===============================================================================
+-->
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Azure AD B2C Authentication Sample</h2>
+        <p>
+            Demonstrates how to authenticate an ASP.Net MVC Controller and an ASP.Net WebForm using Azure AD B2C
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <a href="~/Default.aspx">ASP.Net WebForms Example</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>User Information - MVC Example</h2>
+        <table class="table table-striped table-hover">
+            @foreach (var row in ViewBag.UserInformation)
+            {
+                <tr>
+                    <td>@row.Key</td>
+                    <td>@row.Value</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
